@@ -86,7 +86,7 @@ st.sidebar.title("Controls")
 # Tampilkan webcam feed dengan emotion detection
 webrtc_ctx = webrtc_streamer(
     key="emotion-detection",
-    mode=webrtc_streamer.transform_frames,
+    mode="transform",  # Perubahan di sini
     rtc_configuration=rtc_configuration,
     video_transformer_factory=EmotionTransformer,
     async_transform=True
