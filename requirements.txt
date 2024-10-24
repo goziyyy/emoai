@@ -3,3 +3,4 @@ opencv-python-headless==4.10.0.84
 fer==22.5.1
 numpy==2.1.2
 Pillow==10.4.0
+tensorflow
