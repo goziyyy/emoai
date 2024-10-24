@@ -4,3 +4,4 @@ fer
 numpy
 Pillow
 tensorflow
+streamlit-webrtc
