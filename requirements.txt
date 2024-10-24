@@ -4,4 +4,4 @@ fer
 numpy
 Pillow
 tensorflow
-streamlit-webrtc==0.45.0
+streamlit-webrtc
