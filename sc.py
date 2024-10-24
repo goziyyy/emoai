@@ -12,9 +12,8 @@ st.title("Emotion Recognition App with Emoticon Output")
 detector = FER()
 
 # Konfigurasi WebRTC
-rtc_configuration = RTCConfiguration(
-    {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
-)
+rtc_configuration = {"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]}
+webrtc_ctx = webrtc_streamer(key="emotion-detection", rtc_configuration=rtc_configuration)
 
 # Class untuk memproses video
 class EmotionTransformer(VideoTransformerBase):
