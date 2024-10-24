@@ -88,8 +88,8 @@ webrtc_ctx = webrtc_streamer(
     key="emotion-detection",
     mode="transform",  # Perubahan di sini
     rtc_configuration=rtc_configuration,
-    video_transformer_factory=EmotionTransformer,
-    async_transform=True
+    video_processor_factory=EmotionTransformer,
+    async_processing=True
 )
 
 # Tambahkan informasi cara penggunaan
